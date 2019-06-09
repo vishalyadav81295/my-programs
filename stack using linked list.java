@@ -2,10 +2,10 @@ public class Main
 {
 	public static void main(String[] args) {
 		stack sk=new stack();
-	//	sk.push(10);
-	//	sk.push(13);
-	//	sk.push(3);
-	//	sk.printvalues();
+		sk.push(10);
+		sk.push(13);
+		sk.push(3);
+		sk.printvalues();
 		System.out.println(sk.pop());
 		sk.printvalues();
 	}
