@@ -1,0 +1,27 @@
+import java.util.*;
+class problem2{
+    public static void main(String args[] ) throws Exception {
+       Scanner s=new Scanner(System.in);
+          String s1=s.nextLine();
+          permutation(s1,0,s1.length());
+    }
+
+public  static void permutation(String s,int str,int end){
+    if(str==end-1){
+        System.out.println(s);
+    }
+    else{
+        for(int i=str;i<s.length();i++){
+        s=swap(s,i,str);
+        permutation(s,str+1,end);
+        s=swap(s,i,str);
+        }
+    }}
+    public static String swap(String a,int b,int c){
+        char a1[]=a.toCharArray();
+        char temp=a1[b];
+            a1[b]=a1[c];
+            a1[c]=temp;
+            return String.valueOf(a1);
+    }
+}
